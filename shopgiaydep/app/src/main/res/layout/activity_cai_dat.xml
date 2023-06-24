@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CaiDat"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/CaiDatBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tvtieude"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="CÀI ĐẶT"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngôn ngữ"
+            android:textColor="#000000"
+            android:textStyle="bold">
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiếng Việt"
+                android:textColor="#000000"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="15dp">
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiếng Anh"
+                android:textColor="#000000"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="15dp">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông báo"
+            android:textColor="#000000"
+            android:textStyle="bold">
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhận tất cả thông báo từ ứng dụng"
+                android:textColor="#000000"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="15dp">
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chế độ không làm phiền"
+                android:textColor="#000000"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="15dp">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnApDungCaiDat"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:text="Áp dụng"
+        android:textColor="#F8F8FA"
+        android:textSize="16sp"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp">
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CTDH"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/CTDHBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="15dp"
+            android:text="Chi tiết đơn hàng"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSPDonHang"
+        android:layout_width="match_parent"
+        android:layout_height="553dp"></ListView>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DangNhap">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="166dp"
+            android:layout_height="137dp"
+            android:viewportWidth="166"
+            android:viewportHeight="137"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/giay">
+        </ImageView>
+        <TextView
+            android:id="@+id/banana_shoe"
+            android:layout_width="199dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:text="BANANA SHOES"
+            android:textSize="24sp"
+            android:textColor="#247DFF"
+            android:lineSpacingExtra="-1sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="24px"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:ems="15"
+            android:id="@+id/etEmail"
+            android:background="@drawable/frame_22208">
+        </EditText>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:ems="15"
+            android:id="@+id/etPassword"
+            android:background="@drawable/frame_22207"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword">
+        </EditText>
+        <TextView
+            android:id="@+id/tvQuenMatKhau"
+            android:layout_width="116dp"
+            android:layout_height="20dp"
+            android:text="Quên mật khẩu"
+            android:textSize="14sp"
+            android:textColor="#267EFF"
+            android:lineSpacingExtra="2sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/btDangNhap"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:text="Đăng nhập"
+            android:textColor="#F8F8FA"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button">
+
+        </Button>
+
+        <TextView
+            android:layout_width="131dp"
+            android:layout_height="36dp"
+            android:text="Đăng nhập bằng"
+            android:textSize="14sp"
+            android:textColor="#B9B9BD"
+            android:background="@drawable/frame_22215"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            >
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivIconGG"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/google_logo">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/ivIconFB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/facebook_logo">
+
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            >
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="20dp"
+                android:text="Bạn chưa có tài khoản ?"
+                android:textSize="14sp"
+                android:textColor="#74757A"
+                android:lineSpacingExtra="2sp"
+                android:gravity="center_horizontal|center_vertical">
+
+            </TextView>
+            <TextView
+                android:onClick="register"
+                android:id="@+id/tvDangKy"
+                android:layout_width="82dp"
+                android:layout_height="24dp"
+                android:text="-> Đăng ký"
+                android:textSize="16sp"
+                android:textColor="#267EFF"
+                android:lineSpacingExtra="2sp"
+                android:gravity="center_horizontal|center_vertical"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

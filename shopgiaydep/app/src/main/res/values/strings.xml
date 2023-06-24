@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shop giày</string>
+    <string name="error_field_required">5</string>
+    <string name="error_password_not_match">5</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="ggApi">AIzaSyA1WNf3Va6Iu0zgCVkfQfccm50IAfioxcA</string>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongKe"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="THỐNG KÊ"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn năm:"
+            android:textColor="#000000"
+            android:textSize="15sp"></TextView>
+        <Spinner
+            android:id="@+id/spinner_nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn tháng:"
+            android:textColor="#000000"
+            android:textSize="15sp"></TextView>
+        <Spinner
+            android:id="@+id/spinner_thang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btHTTK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiện thị"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"></Button>
+        <Button
+            android:id="@+id/btBieuDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biểu Đồ"
+            android:layout_gravity="center"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:gravity="center"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Doanh thu"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:gravity="center"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Đã bán"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvThongKe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvDangXuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icondangxuat"
+            android:drawablePadding="15dp"
+            android:text="Đăng xuất"
+            android:textColor="#FF0000"
+            android:textSize="15sp"></TextView>
+
+    </RelativeLayout>
+</LinearLayout>

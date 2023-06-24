@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TinNhan"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="15dp"
+            android:text="SCKH SHOP"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvTinNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"></ListView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:src="@drawable/icontaianh"></ImageButton>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconcamera"
+            android:background="#ffffff"></ImageButton>
+
+        <EditText
+            android:id="@+id/etTinNhan"
+            android:layout_width="257dp"
+            android:layout_height="match_parent"
+            android:hint="Aa"
+            android:textColor="#8E8E93"
+            ></EditText>
+        <ImageButton
+            android:id="@+id/btSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconsend"
+            android:background="#ffffff"></ImageButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibTrangChu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/trangchu"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibTinNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/tinnhanhl"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/giohang"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/thongbao"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibCaNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/canhan"></ImageButton>
+    </LinearLayout>
+
+</LinearLayout>

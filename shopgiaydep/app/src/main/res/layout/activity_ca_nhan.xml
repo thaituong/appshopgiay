@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CaNhan"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CÁ NHÂN"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imguser"
+                android:layout_marginRight="10dp"></ImageView>
+            <TextView
+                android:id="@+id/tvTenUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông Nguyễn"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/iconttcanhan"
+                android:drawablePadding="15dp"
+                android:text="Thông tin cá nhân"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <ImageView
+                android:id="@+id/nextThongTinCaNhan"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nutnext"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icondiachi"
+                android:drawablePadding="15dp"
+                android:text="Địa chỉ nhận hàng"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <ImageView
+                android:id="@+id/nextDiaChiNhanHang"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nutnext"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icondonhang"
+                android:drawablePadding="15dp"
+                android:text="Đơn hàng của tôi"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <ImageView
+                android:id="@+id/nextDonHangCuaToi"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nutnext"></ImageView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/iconsetting"
+                android:drawablePadding="15dp"
+                android:text="Cài đặt"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <ImageView
+                android:id="@+id/nextCaiDat"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nutnext"></ImageView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icondieukhoan"
+                android:drawablePadding="15dp"
+                android:text="Điều khoản &amp; chính sách"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <ImageView
+                android:id="@+id/nextDieuKhoan"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nutnext"></ImageView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/iconhotro"
+                android:drawablePadding="15dp"
+                android:text="Trung tâm trợ giúp"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <ImageView
+                android:id="@+id/nextTrungTamTroGiup"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nutnext"></ImageView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="60dp">
+
+            <TextView
+                android:id="@+id/tvDangXuat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icondangxuat"
+                android:drawablePadding="15dp"
+                android:text="Đăng xuất"
+                android:textColor="#FF0000"
+                android:textSize="15sp"></TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibTrangChu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/trangchu"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibTinNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/tinnhan"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/giohang"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/thongbao"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibCaNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/canhanhl"></ImageButton>
+    </LinearLayout>
+</LinearLayout>

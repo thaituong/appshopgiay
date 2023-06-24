@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SieuKhuyenMai"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/SieuKMBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tvtieude"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="SIÊU KHUYẾN MÃI"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="352dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="Tìm kiếm"
+            android:paddingLeft="100dp"
+            android:textColor="#636D77"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/ibLocSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingTop="8dp"
+            android:src="@drawable/locsp">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gvSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.4"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        ></GridView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibTrangChu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/trangchu"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibTinNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/tinnhan"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/giohang"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/thongbao"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibCaNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/canhan"></ImageButton>
+    </LinearLayout>
+</LinearLayout>

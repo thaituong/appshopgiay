@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DoiDiaChi"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/DoiDiaChiBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="15dp"
+            android:text="THAY ĐỔi ĐỊA CHỈ"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Tên người nhận"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etDiaChiHoTen"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/frame_edvregit"
+            android:ems="15"
+            android:hint="Enter your full name"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+        </EditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Số điện thoại"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etDiaChiSDT"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:background="@drawable/frame_edvregit"
+            android:inputType="phone"
+            android:hint="0123456789"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Địa chỉ"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etDiaChi"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:ems="15"
+            android:background="@drawable/frame_edvregit"
+            android:layout_gravity="center"
+            android:hint="Thủ Đức - HCM"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/btnDoiDiaChi"
+            android:layout_width="327dp"
+            android:layout_height="50dp"
+            android:text="Hoàn tất"
+            android:textColor="#F8F8FA"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:layout_gravity="center">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

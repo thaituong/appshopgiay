@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DoiPTThanhToan"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/DoiPTThanhToanBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="15dp"
+            android:text="PHƯƠNG THỨC THANH TOÁN"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/rbmomo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/iconmomo"
+            android:text="  Thanh toán bằng MoMo"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#3C3D42"
+            android:layout_marginBottom="15dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbzalo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/iconzalo"
+            android:text="  Thanh toán bằng ZaloPay"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#3C3D42"
+            android:layout_marginBottom="15dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbbanking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/iconbanking"
+            android:text="  Thanh toán bằng Banking"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#3C3D42"
+            android:layout_marginBottom="15dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbtienmat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icongift"
+            android:text="  Thanh toán khi nhận hàng"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#3C3D42"></RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDoiPTTT"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:text="Hoàn tất"
+        android:textColor="#F8F8FA"
+        android:textSize="16sp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/button"
+        android:layout_gravity="center">
+    </Button>
+
+</LinearLayout>

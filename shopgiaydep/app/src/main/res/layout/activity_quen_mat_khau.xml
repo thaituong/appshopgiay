@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuenMatKhau"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/QuenMKBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:text="Quên mật khẩu"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Vui lòng nhập email đã đăng ký"
+            android:textColor="#575555"
+            android:textSize="14sp">
+
+        </TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:ems="15"
+            android:id="@+id/etEmail"
+            android:background="@drawable/frame_22208"
+            android:layout_marginTop="30dp">
+        </EditText>
+        <Button
+            android:id="@+id/btnQuenMatKhau"
+            android:layout_width="327dp"
+            android:layout_height="40dp"
+            android:text="Tiếp theo"
+            android:textColor="#F8F8FA"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:layout_gravity="center">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

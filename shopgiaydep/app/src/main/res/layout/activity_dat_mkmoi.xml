@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DatMKMoi"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/DatMKMoiBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector"></ImageButton>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:text="Đặt mật khẩu mới"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Mật khẩu mới (*)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etMatKhauMoi"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/frame_edvregit"
+            android:ems="15"
+            android:hint="Mật khẩu mới"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPassword">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Xác nhận mật khẩu mới (*)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etRepeatMatKhauMoi"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:ems="15"
+            android:background="@drawable/frame_edvregit"
+            android:layout_gravity="center"
+            android:hint="Mật khẩu mới"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btDatMatKhauMoi"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:text="Đặt mật khẩu"
+            android:textColor="#F8F8FA"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:layout_gravity="center">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

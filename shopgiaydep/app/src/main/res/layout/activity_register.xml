@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DangNhap"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/RgBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector"></ImageButton>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:text="Tạo tài khoản"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Họ tên (*)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etRgHoTen"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/frame_edvregit"
+            android:ems="15"
+            android:hint="Enter your full name"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Ngày sinh"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etRgDate"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:ems="15"
+            android:inputType="date"
+            android:background="@drawable/frame_edvregit"
+            android:layout_gravity="center"
+            android:hint="01/01/2022"
+            android:layout_marginBottom="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Số điện thoại"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etRgSDT"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:background="@drawable/frame_edvregit"
+            android:inputType="phone"
+            android:hint="0123456789"
+            android:layout_marginBottom="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Giới tính"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+
+        <RadioGroup
+            android:id="@+id/gRadioButton"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rbRgNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <RadioButton
+                android:id="@+id/rbRgNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:layout_marginTop="5dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Email (*)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etRgEmail"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="email@gmail.com"
+            android:background="@drawable/frame_edvregit"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Mật khẩu (*)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etRgPassword"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Mật khẩu (*)"
+            android:background="@drawable/frame_edvregit"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Xác nhận mật khẩu (*)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etRgRePassword"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Xác nhận mật khẩu"
+            android:background="@drawable/frame_edvregit"
+            android:singleLine="true"
+            android:inputType="textPassword">
+
+        </EditText>
+
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="327dp"
+            android:layout_height="40dp"
+            android:text="Tạo tài khoản"
+            android:textColor="#F8F8FA"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:layout_gravity="center">
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>

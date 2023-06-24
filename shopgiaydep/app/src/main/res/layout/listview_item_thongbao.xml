@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconthongbao"
+        android:paddingBottom="65dp"></ImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/tvTieuDeTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HÀNG MỚI VỀ, SẮM TẾT MÊ LY"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"></TextView>
+
+        <TextView
+            android:id="@+id/tvNoiDungTB"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Lorem ipsum dolor sit amet, sed do consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt"></TextView>
+        <TextView
+            android:id="@+id/tvNgayTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12-02-2023"
+            android:textColor="#B1AEAE"
+            ></TextView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.xacthucthanhcong"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="347dp"
+            android:layout_height="242dp"
+            android:src="@drawable/xtthanhcong"></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:src="@drawable/xtthanhcong2"></ImageView>
+        <Button
+            android:id="@+id/btVaoDangNhap"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:text="Đăng nhập"
+            android:textColor="#F8F8FA"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

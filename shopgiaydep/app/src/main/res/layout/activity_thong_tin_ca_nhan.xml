@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongTinCaNhan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerregit">
+
+        <ImageButton
+            android:id="@+id/ThongTinCaNhanBack"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28.59px"
+            android:layout_marginTop="40px"
+            android:background="#FFFFFF"
+            android:src="@drawable/vector"></ImageButton>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:text="Thông tin cá nhân"
+            android:textAlignment="center"
+            android:textColor="#3C3D42"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Họ tên *"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etTTCNHoTen"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/frame_edvregit"
+            android:ems="15"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Ngày sinh"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etTTCNNgaySinh"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:ems="15"
+            android:inputType="date"
+            android:background="@drawable/frame_edvregit"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Số điện thoại"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etTTCNSDT"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:background="@drawable/frame_edvregit"
+            android:inputType="phone"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Giới tính"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/gRadioButton"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <RadioButton
+                android:id="@+id/rbNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <RadioButton
+                android:id="@+id/rbNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:layout_marginTop="5dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Email (*)"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="3dp"/>
+
+        <EditText
+            android:id="@+id/etTTCNEmail"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/frame_edvregit"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"/>
+
+
+        <Button
+            android:id="@+id/btnTTCN"
+            android:layout_width="327dp"
+            android:layout_height="45dp"
+            android:text="Lưu thông tin"
+            android:textColor="#F8F8FA"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:layout_gravity="center">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
